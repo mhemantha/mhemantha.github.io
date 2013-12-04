@@ -1,0 +1,15 @@
+---
+layout: default
+title: Blog of Hemantha Holla
+---
+
+<div id="home">
+  <h2 id="title">Blog Posts</h2>
+  <div class="content">
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  </div>
+</div>

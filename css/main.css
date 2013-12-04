@@ -1,0 +1,198 @@
+body {
+    height: 100%;
+}
+
+#post {
+  padding-top: 2em;
+}
+
+#post p {
+  margin: 1em 0;
+}
+
+#post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em ;
+  font-family: "Droid Sans Mono", monospace;
+  font-size: 95%;
+  overflow: scroll;
+}
+
+#post pre code {
+  border: none;
+}
+
+/* terminal */
+#post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+
+#post pre.terminal code {
+  background-color: #333;
+}
+
+#post ul, ol {
+    list-style: disc;
+    padding: 0 2em;
+}
+
+#logo {
+    font-family: Gill Sans, Verdana, Sans;
+    font-size: 1.2em;
+    padding-top: 3em;
+}
+
+#logo * span {
+    display: block;
+}
+
+#logo * a {
+    text-decoration: none;
+}
+
+#logo * b {
+    font-size: 1.4em;
+}
+
+#title {
+    font-size: 1.8em;
+    text-align: left;
+}
+
+#meta {
+    font-size: .9em;
+}
+.spacer {
+  font-size: .8em;
+}
+
+#main {
+    padding: 1em;          
+    text-align: justify;
+}
+
+.menu ul {
+  background: #eee;
+  border: 1px solid #ddd;
+  margin: 0;
+  padding: 0;
+  max-width: 198px;
+}
+.menu ul li {
+  list-style: none;
+  /*border-right: 1px solid #ddd;*/
+  width: 33%;
+  min-width: 3em;
+  display: inline-block;
+  margin: 0 -0.35em 0 0;
+}
+.menu ul li:last-child {
+  border-right: none;
+}
+.menu ul li a {
+  text-decoration: none;
+  display: block;
+  color: #444;
+  padding: .6em 0;
+}
+.menu ul li:focus,
+.menu ul li:hover { 
+  color: #000; 
+  background: #aae;
+}
+
+#blurb {
+  margin: auto;
+}
+
+#blurb a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 5% 1em 5%;
+}
+
+.sprite-img {
+  width:160px; 
+  height:56px; 
+  position: absolute;
+}
+.tw {
+  left: -67px;
+}
+.fb {
+  left: -34px;
+}
+.mail {
+  left: -100px;
+}
+
+.sidebar {
+  max-width: 200px;
+  text-align: center;
+  margin: auto;
+  border-right: 1px solid #ddd;
+}
+
+footer {
+    font-size: 80%;
+}
+
+@media (max-width: 639px) {
+  #meta > div {
+    display: inline;
+  }
+}
+
+@media (min-width: 640px) {
+  .sidebar {
+    width: 25%;
+    position: fixed;
+    height: 100%;
+    z-index: 10;
+  }
+
+  #title {
+    float: left;
+    width: 80%;
+  }
+
+  #meta {
+    float: right;
+    text-align: right;
+    width: 20%;
+  }
+  #date {
+    font-size: 1.2em;
+  }
+  .spacer {
+    display: none;
+  }
+
+  .content {
+    clear: both;
+  }
+
+  #main {
+    width: 70%;
+    max-width: 600px;
+    left: 25%;
+    position: absolute;
+  }
+
+  #blurb {
+      top: 92%;
+      left: 1px;
+  }
+}
+@media (min-width: 800px) {
+  #main {
+    left: 200px;
+  }
+}
+

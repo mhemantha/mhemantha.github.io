@@ -1,0 +1,8 @@
+---
+layout: default
+title: about
+---
+
+## About
+
+I am a software engineer in Bengaluru. After graduating from NITK, Surathkal with a B.Tech in IT, I worked in Sun Microsystems for 2.5 years. 

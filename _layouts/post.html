@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<header>
+<h2 id="title">{{ page.title }}</h2>
+<div id="meta">
+    <div id="date">
+        <span class="spacer">published on</span>
+        <span id="year">{{ page.date | date: "%Y" }}</span>
+        <span id="day">{{ page.date | date: "%b %d" }}</span>
+    </div>
+    <div id="length">
+        <span class="spacer">containing</span>
+        {{ page.content | number_of_words }} words
+    </div>
+    <div id="tags">
+        <span class="spacer">on</span>
+        {% for tag in page.tags %}
+        <a class="tag" href="/categories/{{tag}}">{{tag}}</a>
+        {% endfor %}
+    </div>
+</div>
+</header>
+<section>
+    <div id="post" class="content">
+        {{ content }}
+    </div>
+</section>
+<footer>
+  {% include license.md %}
+</footer>
