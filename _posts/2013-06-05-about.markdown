@@ -5,8 +5,7 @@ title: about
 
 ## About
 
-I am a software engineer in Bengaluru. I graduated from NITK, Surathkal with a
-B.Tech in IT. This blog is an attempt at setting up a low friction writing
-regimen for myself that I don't abandon after a couple of days. I hope to
-document my reading, technical knowledge I gather and some occasional life
-experiences here.
+I am a software engineer in Bengaluru. This blog is an attempt at setting up
+a low friction writing regimen for myself that I don't abandon after a couple
+of days. I hope to document my reading, technical knowledge I gather and some
+occasional life experiences here.
